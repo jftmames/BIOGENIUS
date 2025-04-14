@@ -8,17 +8,27 @@
         body {
             font-family: sans-serif;
             line-height: 1.6;
-            margin: 20px;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
             background-color: #f4f4f4;
             color: #333;
         }
         .container {
             max-width: 900px;
-            margin: auto;
+            margin: 20px auto; /* Add margin top/bottom */
             background: #fff;
             padding: 25px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        img { /* Basic responsive images */
+            max-width: 100%;
+            height: auto;
+        }
+        .header-logo {
+             display: block; /* Center logo if needed */
+             margin: 0 auto 15px auto; /* Center and add bottom margin */
+             width: 150px; /* Example width, adjust as needed */
         }
         h1, h2, h3 {
             color: #0056b3; /* Azul corporativo */
@@ -27,6 +37,7 @@
             text-align: center;
             border-bottom: 2px solid #0056b3;
             padding-bottom: 10px;
+            margin-top: 0; /* Adjust margin if logo is added */
         }
         .section {
             margin-bottom: 30px;
@@ -35,6 +46,8 @@
         }
         .section:last-child {
             border-bottom: none;
+            margin-bottom: 0; /* No margin for the last section (footer) */
+            padding-bottom: 0; /* No padding for the last section (footer) */
         }
         table {
             width: 100%;
@@ -45,6 +58,7 @@
             border: 1px solid #ddd;
             padding: 8px;
             text-align: left;
+            vertical-align: top; /* Align table content nicely */
         }
         th {
             background-color: #e9ecef;
@@ -81,12 +95,19 @@
              margin-top: 15px;
              font-style: italic;
         }
+        .image-placeholder { /* Style for image divs */
+             text-align: center;
+             margin-top: 15px;
+             margin-bottom: 15px;
+        }
 
     </style>
 </head>
 <body>
     <div class="container">
         <header class="section">
+             <img src="images/biogenius-logo.png" alt="Logo de BioGenius" class="header-logo">
+
             <h1>BioGenius</h1>
             <p style="text-align: center; font-size: 1.2em;">Inteligencia Artificial para Ganadería</p>
             <p style="text-align: center;">Transformamos la ganadería con IA generativa para prevenir enfermedades, optimizar la producción y aumentar la rentabilidad.</p>
@@ -99,8 +120,8 @@
                 <li>Las soluciones actuales son reactivas, costosas y poco precisas.</li>
                 <li>La ganadería y agricultura enfrentan desafíos crecientes: cambio climático, regulación ESG, y presión por rentabilidad.</li>
             </ul>
-             <div style="text-align: center; font-style: italic; margin-top: 15px;">
-                (Gráfico de impacto económico: Ganado bovino ~120B€, ovino ~30B€, porcino ~40B€, otros ~10B€)
+             <div class="image-placeholder">
+                 <img src="images/grafico-perdidas.png" alt="Gráfico de impacto económico anual por enfermedades animales">
              </div>
              <p style="text-align:center; font-weight: bold; margin-top: 10px;">"Más de 200.000 millones de euros se pierden cada año por enfermedades animales evitables."</p>
         </section>
@@ -112,8 +133,8 @@
                 <li>Predice brotes, genera planes personalizados, reduce costes.</li>
                 <li><strong>No requiere sensores propios</strong> (Sensor-agnóstico).</li>
             </ul>
-             <div style="border: 1px dashed #ccc; padding: 15px; text-align: center; margin-top: 15px; font-style: italic;">
-                 [Conceptualización del Panel Inteligente de Predicción Sanitaria de BioGenius: Alertas de riesgo, simulación de escenarios, recomendaciones automáticas, informe ESG, indicadores productivos]
+             <div class="image-placeholder">
+                  <img src="images/panel-concepto.png" alt="Concepto del panel inteligente de BioGenius">
              </div>
         </section>
 
@@ -217,7 +238,7 @@
                 <li>Monetización de datos e informes</li>
             </ul>
              <div class="revenue-distribution">
-                 Distribución de ingresos por canal: SaaS (45%), Licencias (25%), Servicios Premium (10%), Datos (20%)
+                 Distribución de ingresos por canal (Estimado): SaaS (45%), Licencias (25%), Servicios Premium (10%), Datos (20%)
              </div>
             <h3>Planes de Precios (anuales):</h3>
             <ul>
@@ -229,8 +250,8 @@
 
         <section id="mercado" class="section">
             <h2>Oportunidad Global en Pleno Crecimiento</h2>
-             <div style="text-align: center; font-style: italic; margin-top: 15px;">
-                 [Gráfico TAM/SAM/SOM]
+             <div class="image-placeholder">
+                 <img src="images/grafico-tam-sam-som.png" alt="Gráfico TAM SAM SOM para BioGenius">
              </div>
              <table>
                 <thead>
@@ -277,8 +298,9 @@
 
         <section id="equipo" class="section">
             <h2>Equipo: Visión Estratégica + Ejecución Técnica</h2>
-            <ul>
+             <ul>
                 <li><strong>José Fernández (CEO):</strong> Arquitectura digital, IA, transformación digital.</li>
+                <li><strong>Javier González (CTO):</strong> Telecomunicaciones, doctor en ciberseguridad.</li>
                 <li><strong>Equipo técnico:</strong> Expertos en IA generativa, salud animal, datos biológicos.</li>
             </ul>
         </section>
@@ -289,7 +311,7 @@
             <p><strong>2 Millones €</strong> para desarrollo, pilotos y marketing.</p>
 
             <h3>Proyecciones a 5 Años:</h3>
-            <table>
+             <table>
                  <thead>
                     <tr>
                         <th>Año</th>
@@ -359,8 +381,7 @@
                 <p>Email: <a href="mailto:jose.fernandezt@universidadunie.com">jose.fernandezt@universidadunie.com</a></p>
                 <p>Teléfono: <a href="tel:+34685106684">+34 685 106 684</a></p>
             </div>
-             <p style="text-align:center; margin-top: 30px;">MUCHAS GRACIAS</p>
+             <p style="text-align:center; margin-top: 30px; padding-bottom: 20px;">MUCHAS GRACIAS</p>
         </footer>
-    </div>
-</body>
+    </div> </body>
 </html>
