@@ -5,103 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BioGenius - Inteligencia Artificial para Ganadería</title>
     <style>
-        body {
-            font-family: sans-serif;
-            line-height: 1.6;
-            margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            max-width: 900px;
-            margin: 20px auto; /* Add margin top/bottom */
-            background: #fff;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        img { /* Basic responsive images */
-            max-width: 100%;
-            height: auto;
-        }
-        .header-logo {
-             display: block; /* Center logo if needed */
-             margin: 0 auto 15px auto; /* Center and add bottom margin */
-             width: 150px; /* Example width, adjust as needed */
-        }
-        h1, h2, h3 {
-            color: #0056b3; /* Azul corporativo */
-        }
-        h1 {
-            text-align: center;
-            border-bottom: 2px solid #0056b3;
-            padding-bottom: 10px;
-            margin-top: 0; /* Adjust margin if logo is added */
-        }
-        .section {
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #eee;
-        }
-        .section:last-child {
-            border-bottom: none;
-            margin-bottom: 0; /* No margin for the last section (footer) */
-            padding-bottom: 0; /* No padding for the last section (footer) */
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-            vertical-align: top; /* Align table content nicely */
-        }
-        th {
-            background-color: #e9ecef;
-        }
-        ul, ol {
-            padding-left: 20px;
-        }
-        .contact-info {
-            text-align: center;
-            margin-top: 20px;
-            padding: 15px;
-            background-color: #e9ecef;
-            border-radius: 5px;
-        }
-        .quote {
-            font-style: italic;
-            text-align: center;
-            margin: 20px 0;
-            padding: 10px;
-            background-color: #f8f9fa;
-            border-left: 5px solid #0056b3;
-        }
-         .roadmap-item {
-            margin-bottom: 10px;
-        }
-        .roadmap-year {
-            font-weight: bold;
-        }
-        .revenue-distribution {
-             /* Placeholder for chart - maybe describe it */
-             border: 1px dashed #ccc;
-             padding: 15px;
-             text-align: center;
-             margin-top: 15px;
-             font-style: italic;
-        }
-        .image-placeholder { /* Style for image divs */
-             text-align: center;
-             margin-top: 15px;
-             margin-bottom: 15px;
-        }
+    :root {
+      --primary: #003366;
+      --secondary: #e9ecef;
+      --background: #f9f9f9;
+      --text: #333;
+      --accent: #0056b3;
+    }
 
-    </style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.7;
+      background-color: var(--background);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 30px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .header-logo {
+      display: block;
+      margin: 0 auto 20px auto;
+      width: 120px;
+    }
+
+    h1, h2, h3 {
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 0.5em;
+    }
+
+    h1 {
+      text-align: center;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      font-size: 1.5em;
+    }
+
+    .section {
+      margin-bottom: 40px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 30px;
+    }
+
+    .section:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-size: 0.95em;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: var(--secondary);
+      font-weight: 600;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+      margin: 10px 0;
+    }
+
+    .contact-info {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--secondary);
+      border-radius: 10px;
+      font-size: 1em;
+    }
+
+    .quote {
+      font-style: italic;
+      text-align: center;
+      background: #f2f4f8;
+      border-left: 5px solid var(--accent);
+      margin: 30px 0;
+      padding: 15px;
+    }
+
+    .roadmap-item {
+      margin-bottom: 12px;
+    }
+
+    .roadmap-year {
+      font-weight: bold;
+      color: var(--primary);
+    }
+
+    .revenue-distribution {
+      border: 1px dashed #ccc;
+      padding: 20px;
+      text-align: center;
+      margin-top: 15px;
+      font-style: italic;
+      color: #666;
+      border-radius: 8px;
+      background-color: #fafafa;
+    }
+
+    .image-placeholder {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer p {
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
+
 </head>
 <body>
     <div class="container">
